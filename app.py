@@ -10,14 +10,14 @@ df = pd.read_csv("https://raw.githubusercontent.com/jpcorona/demoAgrosuper/main/
 
 
 st.set_page_config(
-    page_title = 'Real-Time Data Science Dashboard',
+    page_title = 'Dashboard Tiempo Real',
     page_icon = '✅',
     layout = 'wide'
 )
 
 # dashboard title
 
-st.title("Real-Time / Live Data Science Dashboard")
+st.title("Dashboard Tiempo Real")
 
 # top-level filters 
 
