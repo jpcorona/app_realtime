@@ -29,7 +29,7 @@ placeholder = st.empty()
 
 # dataframe filter 
 
-df = df[df['job']==job_filter]
+df = df[df['profesion']==job_filter]
 
 # near real-time / live feed simulation 
 
