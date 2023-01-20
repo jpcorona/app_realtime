@@ -1,4 +1,4 @@
-import streamlit as st 
+aimport streamlit as st 
 import numpy as np 
 import pandas as pd 
 import time 
@@ -52,7 +52,7 @@ for seconds in range(200):
 
         # fill in those three columns with respective metrics or KPIs 
         kpi1.metric(label="Edad ⏳", value=round(avg_age), delta= round(avg_age) - 10)
-        kpi2.metric(label="Married Count 💍", value= int(count_married), delta= - 10 + count_married)
+        kpi2.metric(label="Numero de casados 💍", value= int(count_married), delta= - 10 + count_married)
         kpi3.metric(label="A/C Balance ＄", value= f"$ {round(balance,2)} ", delta= - round(balance/count_married) * 100)
 
         # create two columns for charts 
