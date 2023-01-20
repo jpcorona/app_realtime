@@ -66,7 +66,7 @@ for seconds in range(200):
             st.markdown("### Gráfico 2")
             fig2 = px.histogram(data_frame = df, x = 'age_new')
             st.write(fig2)
-        st.markdown("### Detailed Data View")
+        st.markdown("### Vista detallada / data")
         st.dataframe(df)
         time.sleep(1)
     #placeholder.empty()
