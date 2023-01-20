@@ -21,7 +21,7 @@ st.title("Dashboard Tiempo Real")
 
 # top-level filters 
 
-job_filter = st.selectbox("Seleccione profesion", pd.unique(df['job']))
+job_filter = st.selectbox("Seleccione profesion", pd.unique(df['profesion']))
 
 
 # creating a single-element container.
