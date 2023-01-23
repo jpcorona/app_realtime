@@ -64,7 +64,7 @@ for seconds in range(200):
             st.write(fig)
         with fig_col2:
             st.markdown("### Gráfico 2")
-            fig2 = px.Histogram2d(data_frame = df, x = 'nueva_edad')
+            fig2 = px.Histogram(data_frame = df, x = 'nueva_edad')
             st.write(fig2)
         st.markdown("### Vista detallada / data")
         st.dataframe(df)
