@@ -15,21 +15,21 @@ st.set_page_config(
     layout = 'wide'
 )
 
-# dashboard title
+# titulo dashboard
 
 st.title("Dashboard Tiempo Real")
 
-# top-level filters 
+# filtros
 
-job_filter = st.selectbox("Seleccione profesion", pd.unique(df['profesion']))
+filtro_profesion = st.selectbox("Seleccione profesion", pd.unique(df['profesion']))
 
 
-# creating a single-element container.
+# creando un contenedor
 placeholder = st.empty()
 
-# dataframe filter 
+# filtro dataframe
 
-df = df[df['profesion']==job_filter]
+df = df[df['profesion']==filtro_profesion]
 
 # near real-time / live feed simulation 
 
