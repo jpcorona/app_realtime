@@ -47,7 +47,7 @@ for seconds in range(200):
     balance = np.mean(df['nuevo_balance'])
 
     with placeholder.container():
-        # create three columns
+        # crear 3 columnas
         kpi1, kpi2, kpi3 = st.columns(3)
 
         # fill in those three columns with respective metrics or KPIs 
@@ -55,7 +55,7 @@ for seconds in range(200):
         kpi2.metric(label="KPI 2", value= int(contador_casados), delta= - 10 + contador_casados)
         kpi3.metric(label="KPI 3 ＄", value= f"$ {round(balance,2)} ", delta= - round(balance/contador_casados) * 100)
 
-        # create two columns for charts 
+        # creando 2 columnas para los gráficos 
 
         fig_col1, fig_col2 = st.columns(2)
         with fig_col1:
