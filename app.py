@@ -6,7 +6,7 @@ import plotly.express as px
 
 
 # csv repo de github
-df = pd.read_csv("https://raw.githubusercontent.com/jpcorona/demoAgrosuper/main/datos.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/jpcorona/demoData/main/datos.csv")
 
 
 st.set_page_config(
