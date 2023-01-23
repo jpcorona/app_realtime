@@ -55,7 +55,7 @@ for seconds in range(200):
         kpi2.metric(label="KPI 2", value= int(contador_casados), delta= - 10 + contador_casados)
         kpi3.metric(label="KPI 3 ＄", value= f"$ {round(balance,2)} ", delta= - round(balance/contador_casados) * 100)
 
-        # creando 2 columnas para los gráficos 
+        #columnas para los gráficos 
 
         fig_col1, fig_col2 = st.columns(2)
         with fig_col1:
