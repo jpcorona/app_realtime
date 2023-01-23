@@ -50,7 +50,7 @@ for seconds in range(200):
         # crear 3 columnas
         kpi1, kpi2, kpi3 = st.columns(3)
 
-        # fill in those three columns with respective metrics or KPIs 
+        # métricas o KPI
         kpi1.metric(label="KPI 1 ⏳", value=round(avg_age), delta= round(avg_age) - 10)
         kpi2.metric(label="KPI 2", value= int(contador_casados), delta= - 10 + contador_casados)
         kpi3.metric(label="KPI 3 ＄", value= f"$ {round(balance,2)} ", delta= - round(balance/contador_casados) * 100)
