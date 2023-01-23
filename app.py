@@ -42,7 +42,7 @@ for seconds in range(200):
     # creando KPIs 
     avg_age = np.mean(df['nueva_edad']) 
 
-    contador_casados = int(df[(df["estado_civil"]=='married')]['marital'].count() + np.random.choice(range(1,30)))
+    contador_casados = int(df[(df["estado_civil"]=='married')]['estado_civil'].count() + np.random.choice(range(1,30)))
     
     balance = np.mean(df['nuevo_balance'])
 
