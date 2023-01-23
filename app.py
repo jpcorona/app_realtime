@@ -31,16 +31,16 @@ placeholder = st.empty()
 
 df = df[df['profesion']==filtro_profesion]
 
-# near real-time / live feed simulation 
+# NRTP / simulacion feed rt 
 
 for seconds in range(200):
 #while True: 
     
-    df['age_new'] = df['edad'] * np.random.choice(range(1,5))
+    df['nueva_edad'] = df['edad'] * np.random.choice(range(1,5))
     df['balance_new'] = df['balance'] * np.random.choice(range(1,5))
 
     # creating KPIs 
-    avg_age = np.mean(df['age_new']) 
+    avg_age = np.mean(df['nueva_edad']) 
 
     count_married = int(df[(df["marital"]=='married')]['marital'].count() + np.random.choice(range(1,30)))
     
