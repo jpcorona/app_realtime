@@ -60,11 +60,11 @@ for seconds in range(200):
         fig_col1, fig_col2 = st.columns(2)
         with fig_col1:
             st.markdown("### Gráfico 1")
-            fig = px.density_heatmap(data_frame=df, y = 'age_new', x = 'marital')
+            fig = px.density_heatmap(data_frame=df, y = 'nueva_edad', x = 'marital')
             st.write(fig)
         with fig_col2:
             st.markdown("### Gráfico 2")
-            fig2 = px.histogram(data_frame = df, x = 'age_new')
+            fig2 = px.histogram(data_frame = df, x = 'nueva_edad')
             st.write(fig2)
         st.markdown("### Vista detallada / data")
         st.dataframe(df)
