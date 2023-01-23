@@ -39,10 +39,10 @@ for seconds in range(200):
     df['nueva_edad'] = df['edad'] * np.random.choice(range(1,5))
     df['nuevo_balance'] = df['balance'] * np.random.choice(range(1,5))
 
-    # creating KPIs 
+    # creando KPIs 
     avg_age = np.mean(df['nueva_edad']) 
 
-    count_married = int(df[(df["marital"]=='married')]['marital'].count() + np.random.choice(range(1,30)))
+    contador_casados = int(df[(df["marital"]=='married')]['marital'].count() + np.random.choice(range(1,30)))
     
     balance = np.mean(df['nuevo_balance'])
 
@@ -52,8 +52,8 @@ for seconds in range(200):
 
         # fill in those three columns with respective metrics or KPIs 
         kpi1.metric(label="KPI 1 ⏳", value=round(avg_age), delta= round(avg_age) - 10)
-        kpi2.metric(label="KPI 2", value= int(count_married), delta= - 10 + count_married)
-        kpi3.metric(label="KPI 3 ＄", value= f"$ {round(balance,2)} ", delta= - round(balance/count_married) * 100)
+        kpi2.metric(label="KPI 2", value= int(contador_casados), delta= - 10 + contador_casados)
+        kpi3.metric(label="KPI 3 ＄", value= f"$ {round(balance,2)} ", delta= - round(balance/contador_casados) * 100)
 
         # create two columns for charts 
 
