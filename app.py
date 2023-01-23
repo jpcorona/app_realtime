@@ -40,7 +40,7 @@ for seconds in range(200):
     df['nuevo_balance'] = df['balance'] * np.random.choice(range(1,5))
 
     # creando KPIs 
-    avg_age = np.mean(df['nueva_edad']) 
+    avg_edad = np.mean(df['nueva_edad']) 
 
     contador_casados = int(df[(df["estado_civil"]=='casado')]['estado_civil'].count() + np.random.choice(range(1,30)))
     
@@ -51,7 +51,7 @@ for seconds in range(200):
         kpi1, kpi2, kpi3 = st.columns(3)
 
         # métricas o KPI
-        kpi1.metric(label="KPI 1 ⏳", value=round(avg_age), delta= round(avg_age) - 10)
+        kpi1.metric(label="KPI 1 ⏳", value=round(avg_edad), delta= round(avg_edad) - 10)
         kpi2.metric(label="KPI 2", value= int(contador_casados), delta= - 10 + contador_casados)
         kpi3.metric(label="KPI 3 ＄", value= f"$ {round(balance,2)} ", delta= - round(balance/contador_casados) * 100)
 
