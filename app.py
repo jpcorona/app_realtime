@@ -37,14 +37,14 @@ for seconds in range(200):
 #while True: 
     
     df['nueva_edad'] = df['edad'] * np.random.choice(range(1,5))
-    df['balance_new'] = df['balance'] * np.random.choice(range(1,5))
+    df['nuevo_balance'] = df['balance'] * np.random.choice(range(1,5))
 
     # creating KPIs 
     avg_age = np.mean(df['nueva_edad']) 
 
     count_married = int(df[(df["marital"]=='married')]['marital'].count() + np.random.choice(range(1,30)))
     
-    balance = np.mean(df['balance_new'])
+    balance = np.mean(df['nuevo_balance'])
 
     with placeholder.container():
         # create three columns
